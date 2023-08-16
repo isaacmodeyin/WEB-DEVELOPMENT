@@ -1,0 +1,71 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #333;
+            text-align: center;
+            color:fff;
+        }
+        h1 {
+            display: none;
+        }
+        /* smartphone */
+
+        @media (max-width: 640px){
+            body {
+                background: red;
+
+            }
+
+            #smartphone h1 {
+                display: block;
+            }
+        }
+
+        /* Tablet */
+        @media(min-width: 641px) and (max-width: 1007px)
+{
+    body {
+        background: blue;
+
+    }
+    #tablet h1 {
+        display: block;
+    }
+}
+
+/* Desktop */
+@media(min-width:1008px)
+{
+    body{
+        background: yellow;
+    }
+    #desktop h1 {
+        display: block;
+    }
+}
+            
+            
+    </style>
+</head>
+<body>
+    <div id="desktop">
+        <h1>Desktop</h1>
+
+    </div>
+    <div id="tablet">
+        <h1>Tablet</h1>
+    </div>
+
+    <div id="smartphone">
+        <h1>Smartphone</h1>
+    </div>
+
+    
+</body>
+</html>

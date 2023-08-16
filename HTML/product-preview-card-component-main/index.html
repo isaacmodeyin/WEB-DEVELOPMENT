@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      body {
+        background: #eedbdb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      section {
+        height: 450px;
+        width: 600px;
+        display: flex;
+        border-radius: 5px;
+      }
+
+      .image {
+        background: url("images/image-product-desktop.jpg") no-repeat;
+        background-size: cover;
+        height: 100%;
+        width: 50%;
+        border-top-left-radius: 7px;
+        border-bottom-left-radius: 7px;
+      }
+
+      .content {
+        background: #fff;
+        height: 100%;
+        width: 50%;
+        
+
+      }
+
+      .content h5 {
+        text-transform: uppercase;
+        font-weight: 100%;
+        letter-spacing: 14px;
+        color: #1e803f;
+      }
+
+      .content .inner-text {
+        margin: 40px;
+        }
+
+      .inner-text a {
+        text-decoration: none;
+        background: #1e803f;
+        color: #fff;
+        padding: 9px 40px;
+        border-radius: 5px;
+      }
+
+      .price {
+        margin-bottom: 50px;
+      }
+
+      .price .newprice {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 21px;
+        color:rgb(220, 31, 220) ;
+        font-weight: 900;
+      }
+      @media (max-width:523px){
+        section{
+          display:flex;
+          flex-direction:row;
+          margin:10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="image"></div>
+      <div class="content">
+        <div class="inner-text">
+          <h5>Preview</h5>
+          <h2>Izzycool Avogadro's formulated perfume</h2>
+          <p>
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="price">
+            <span class="newprice">$149.99</span>
+            <strike><span class="oldprice">$169.99</span></strike>
+          </div>
+          <a href="#"
+            ><img class="cart" src="images/icon-cart.svg" alt="cart" /> Add to
+            Cart</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>

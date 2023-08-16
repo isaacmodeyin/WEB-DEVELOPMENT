@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      /* CSS RESET STARTS */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* CSS RESET ENDS */
+
+      .parent {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        background-color: rgb(73, 99, 90);
+        height: 50px;
+        align-items: center;
+        margin: 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .hero {
+        background-image: url("Images/WhatsApp\ Image\ 2022-11-02\ at\ 10.59.21\ AM.jpeg");
+        background-size: cover;
+        height: 300px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+
+      .submit {
+        background-color:green;
+        padding: 10px;
+        border: 2px solid #fff;
+        border-radius: 5px;
+        margin-top: 20px;
+      }
+
+      /* ABOUT */
+      .about {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: bisque;
+        color: #333;
+      }
+
+      .about h3 {
+        margin-bottom: 20px;
+      }
+
+      /* STAFF */
+      .staffs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 250px;
+        text-align: center;
+      }
+
+      .staffs img {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+      }
+
+      .message {
+        height: 300px;
+        background-color: bisque;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* FORM */
+      label {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      input {
+        padding: 10px 40px;
+        margin-bottom: 6px;
+      }
+      /* SMARTPHONE */
+      @media (max-width: 640px) {
+        .staffs {
+          flex-direction: column;
+          height: 700px;
+          background: #ddd;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          color: purple;
+        }
+
+        /* .hero; */
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="parent">
+        <li><a href="#">ES6</a></li>
+        <li><a href="#">JavaScript</a></li>
+        <li><a href="#">C#</a></li>
+        <li><a href="#">C</a></li>                              
+        <li><a href="#">Angular</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="hero">
+        <h1 style="color: rgb(73, 44, 203)">Welcome to Izzycool Tech crunch</h1>
+        <a href="" class="submit">Learn More</a>
+      </section>
+
+      <section class="about">
+        <h3>About Us</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam et
+          aperiam debitis tenetur. Cumque illum harum officiis quas nesciunt
+          consequatur quasi! Officiis quis saepe placeat reiciendis, fuga vel
+          nemo. Esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          aspernatur iusto cumque ipsam!
+          Explicabo vel voluptatibus consectetur obcaecati voluptates in dolor
+        </p>
+      </section>
+      
+      <section class="staffs">
+        <div>
+          <img src="Images/WhatsApp Image 2022-11-02 at 10.59.21 AM.jpeg" alt="CEO" />
+          <h4>Jonathan Smith</h4>
+          <p>CEO</p>
+        </div>
+        <div>
+          <img
+          src="https://th.bing.com/th/id/OIP.ANBtqtE3FBxuRPVc1n5qhAHaJ4?pid=ImgDet&rs=1"
+          alt="CFO"
+          />
+          <h4>Jonathan hBird</h4>
+          <p>CFO</p>
+          </div>
+        <div>
+          <img src="Images/WhatsApp Image 2022-11-02 at 10.59.21 AM.jpeg" alt="CSO" />
+          <h4>Jonathan Smith</h4>
+          <p>CSO</p>
+        </div>
+      </section>
+      
+      <section class="message">
+        <h3>Leave a Message</h3>
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" placeholder="Enter Your Name" />
+          </div>
+          <div>
+            <label for="name">Phone Number</label>
+            <input
+            type="number"
+              name="name"
+              placeholder="Enter Your Phone Number"
+            />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Leave a Message"></textarea>
+          </div>
+          <input type="button" value="Submit" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

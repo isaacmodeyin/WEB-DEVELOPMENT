@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .parent {
+        background-color: #444;
+        height: 400px;
+        width: 400px;
+        position: relative;
+          
+      }
+
+      .child {
+        height: 100px;
+        width: 100px;
+        
+      }
+      .outlaw {
+        background-color: red;
+        position: absolute;
+        left:50vh;
+        bottom:50vh ;
+        
+      }
+
+      .outlaw2 {
+        background-color: pink;
+        position: relative;
+        left: 50px;
+        bottom:0;
+      }
+
+      .a {
+        background-color: aquamarine;
+        position:absolute; 
+        left: 50vh;
+      }
+      .b {
+        background-color: blue;
+        bottom:0;
+        position:absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="child outlaw"></div>
+    <div class=" child outlaw2"></div>
+
+    <div class="parent">
+      <div class="child a"></div>
+      <div class="child b"></div>
+
+      
+    </div>
+  </body>
+</html>
